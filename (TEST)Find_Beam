@@ -1,0 +1,67 @@
+//Defining Pins on ESP32:
+#define ServoR 19
+#define ServoL 18
+
+#define LMotorEN_1 12
+#define LMotorEN_2 14
+#define RMotorEN_1 17
+#define RMotorEN_2 17
+
+#define LEncoderA 39
+#define LEncoderB 34
+#define REncoderA 35
+#define REncoderB 32
+
+#define RMotorBWD 16
+#define RMotorFWD 4
+
+#define LMotorBWD 26
+#define LMotorFWD 27 
+
+
+//Defining States of Robot
+#define Find_Beam 0
+#define Center_Beam 1
+#define Approach_Beam 2
+#define Mount_Beam 3
+#define Up_Beam 4
+#define Down_Beam 5
+#define Off_Beam 6
+#define Return2_Start 7
+
+
+void setup() {
+
+  //Initializng Output Pins for ESP32
+  pinMode(ServoR, OUTPUT)
+  pinMode(ServoL, OUTPUT)
+  pinMode(RMotorBWD, OUTPUT)
+  pinMode(RMotorFWD, OUTPUT)
+   pinMode(LMotorBWD, OUTPUT)
+  pinMode(LMotorFWD, OUTPUT)
+
+}
+
+void loop() {
+ 
+
+  switch (Robot_Sequence) { //Main control structure for robot, switch between cases for different stage functions
+    case Find_Beam:
+      //this is an example addition to the code I just made
+    case Center_Beam:
+
+    case Approach_Beam:
+
+    case Mount_Beam:
+
+    case Up_Beam:
+
+    case Down_Beam:
+
+    case Off_Beam:
+
+    case Return2_Start:
+    
+  }
+
+}
